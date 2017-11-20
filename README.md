@@ -18,7 +18,7 @@ more than half a billion dollars to American business. There is a clear
 growth tendency:
 
 ![This image shows the amount of phishing attacks per year. Data from
-the Anti Phishing Work Group ](introduction1.png)
+the Anti Phishing Work Group ](readmeimg/introduction1.png)
 
 Project goal
 ============
@@ -135,7 +135,7 @@ In order to retrieve this features, several Python libraries were
 required, such as Pandas, BeautifulSoup, Alexa Rank and PythonWhois. To
 extract specific values and tags, regular expressions were used:
 
-![REGEX used for the feature finding ](regex.png)
+![REGEX used for the feature finding ](readmeimg/regex.png)
 
 The feature gathering code is organized as followed: An abstract class
 *FeatureFinder* with two methods: *getFeatureTitle* and
@@ -159,7 +159,7 @@ final CSV file without further coding.
 For the sake of clarity, in the following diagram only 4 generalizations
 of feature finder were included:
 
-![UML class diagram ](uml/uml.png)
+![UML class diagram ](readmeimg/uml/uml.png)
 
 This process produces 2 output CSV files. The first file with the
 features of phishing emails and an extra column of “Phishy” with True as
@@ -206,7 +206,7 @@ relying on rapidminer.
 
 The following is an image of the current flow designed for this project:
 
-![Root flow ](flow.png "fig:") [fig:root]
+![Root flow ](readmeimg/flow.png "fig:") [fig:root]
 
 The Root flow uses custom built building blocks, such as *data acq.*
 (data acquisition) and each of the sub-processes on the right side of
@@ -228,14 +228,14 @@ into the training flow.
 Therefore, this building block has 2 outputs: 1) Training data and 2)
 Testing data.
 
-![Data retrieval and splitting block](dataacq.png)
+![Data retrieval and splitting block](readmeimg/dataacq.png)
 
 Once we have the separate datasets, we have to train the algorithms and
 test their performance. That is the role of the custom built building
 block for each machine learning algorithm depicted in the following
 diagram:
 
-![Train test block](traintestblock.png)
+![Train test block](readmeimg/traintestblock.png)
 
 The first input is the training dataset and the second the testing
 dataset. The training dataset goes into a *Optimize parameters* step, in
@@ -259,10 +259,10 @@ requires. The following table and bar chart show the accuracy, recall
 and precision for each algorithm.
 
 ![Performance results of the tested algorithms in tabular
-format](results/table.png)
+format](readmeimg/results/table.png)
 
 ![Performance results of the tested algorithms in a bar
-chart](results/graph.png)
+chart](readmeimg/results/graph.png)
 
 Currently the algorithm that performs bests in this scenario and with
 this email corpus is Naive Bayes with an accuracy of 99,18% and a recall
