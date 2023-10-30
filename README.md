@@ -73,7 +73,7 @@ emails. By the moment the dataset was to be accessed, the file was no
 longer available. In order to acquire the dataset, the Web Archive[^4]
 was used to retrieve the lastest version available and the folling link
 was found to download the dataset:
-*http://monkey.org/ jose/phishing/phishing3.mbox*. The dataset will be
+*http://monkey.org/~jose/phishing/phishing3.mbox*. The dataset will be
 published in the same GitHub repository with the rest of the code, to
 ensure reproducibility of this work.
 
@@ -295,7 +295,7 @@ the overall results.
 [^2]: https://github.com/diegoocampoh/MachineLearningPhishing
 
 [^3]: Phishing corpus - Nazario. phishingcorpus homepage, Apr. 2006.
-    http://monkey.org/%7Ejose/wiki/doku.php?id=PhishingCorpus
+    http://monkey.org/%7Ejose/phishing/
 
 [^4]: Web Archive - https://archive.org/web/
 
